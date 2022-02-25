@@ -19,8 +19,8 @@ artists = [song.next_sibling.next_sibling.getText()[:-1] for song in songs]
 
 sp = spotipy.Spotify(
     auth_manager=SpotifyOAuth(
-        client_id="17e9a403e3644cf8b5e6bdb0df353aa6",
-        client_secret="74efdee84750445d98bc9664997a683f",
+        client_id=Spotify_ID,
+        client_secret=Spotify_secret,
         redirect_uri="http://example.com",
         scope="playlist-modify-private",
         cache_path="token.txt"
